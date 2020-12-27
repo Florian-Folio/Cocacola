@@ -1,83 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<title>CocaCola Website</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-
-
+	<link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
+
 <body>
-	<section>
-		<div class="circle"></div>
-		<header>
-			<a href="#"><img src="images/logo.png" class="logo" alt="LogodeCocaCola"></a>
-			<ul class="navigation">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">What's News</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</header>
-		<div class="content">
+<section>
+	<div class="slider">	
+  <!-- Swiper -->
+  <div class="swiper-container">
+    	<div class="swiper-wrapper">
+		    <div class="swiper-slide"> <img src="images/cocacola1.png"></div>
+		    <div class="swiper-slide"> <img src="images/cocacola2.png"></div>
+		    <div class="swiper-slide"> <img src="images/cocacola3.png"></div>
+		    <div class="swiper-slide"> <img src="images/cocacola4.png"></div>
+		    <div class="swiper-slide"> <img src="images/cocacola5.png"></div>
+		    <div class="swiper-slide"> <img src="images/cocacola6.png"></div>
+      </div>
+  </div>
+</div>
+</section>
 
-			<div class="Textbox">
-					<h2>Taste the Feeling</h2>
-					<p>Lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking Lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking Lorem It is a long established fact that a reader will be distracted by the readable content of a page when looking .</p>
-					<a href="#">Learn More</a>
-					
-			</div>
+  <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-			<div class="imgbox">
-			<div class="swiper-container">
-				 <div class="swiper-wrapper">
-					      <div class="swiper-slide"><img src="images\cocacola1.png"></div>
-					      <div class="swiper-slide"><img src="images\cocacola2.png"></div>
-					      <div class="swiper-slide"><img src="images\cocacola4.png"></div>
-					      <div class="swiper-slide"><img src="images\cocacola5.png"></div>
-					      <div class="swiper-slide"><img src="images\cocacola6.png"></div>
-    			</div>
-			</div>
-			</div>
-	</div>
-
-		<ul class="sci">
-			<li><a href="#"><img src="images/facebook.png"></a></li>
-			<li><a href="#"><img src="images/twitter.png"></a></li>
-			<li><a href="#"><img src="images/instagram.png"></a></li>
-		</ul>
-
-
-	</section>
-
-	
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
+  <!-- Initialize Swiper -->
+  <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
       coverflowEffect: {
-        rotate: 50,
+        rotate: 0,
         stretch: 0,
-        depth: 100,
+        depth: 0,
         modifier: 1,
         slideShadows: true,
       },
-      pagination: {
-        el: '.swiper-pagination',
-      },
+     loop:true,
     });
   </script>
- 
-
 </body>
+
 </html>
